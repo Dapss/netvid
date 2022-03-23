@@ -7,6 +7,7 @@
             <a href="{{route('film.create')}}" class="text-slate-100 hover:text-white hover:scale-110 rounded-md py-2 px-4 bg-red-500 duration-300">Add Film</a>
         </div>
     </x-slot>
+    
     {{-- Hots --}}
     {{--  Movie Poster  --}}
     <div class="p-6 overflow-hidden bg-slate-800 rounded-md shadow-md">
@@ -69,15 +70,6 @@
                     <div class="absolute inset-0 bg-center z-0 opacity-60 rounded-lg" style="background-size: 100% 100%; background-repeat:no-repeat; background-image: url('{{$data->posterImage()}}')"></div>
                     <div class="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex items-end text-1xl text-left text-white font-semibold mb-2 mx-2">{{$data->judul}}</div>
                 </div>
-            </a>
-            @endforeach
-            @foreach ($datas as $data)
-            <a href="{{route('film.show' , $data->id)}}">
-                <div class="w-32 h-48 bg-grey-100 relative hover:scale-105 ease-out duration-300">
-                    <div class="absolute inset-0 bg-center z-0 opacity-60 rounded-lg" style="background-size: 100% 100%; background-repeat:no-repeat; background-image: url('{{$data->posterImage()}}')"></div>
-                    <div class="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex items-end text-1xl text-left text-white font-semibold mb-2 mx-2">{{$data->judul}}</div>
-                </div>
-            </a>
             @endforeach
         </div>
         

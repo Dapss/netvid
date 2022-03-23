@@ -31,6 +31,7 @@ class StoreFilmRequest extends FormRequest
             'genre' => 'required',
             'sinopsis' => 'required',
             'poster' => 'required|image',
+            'cover' => 'required|image',
         ];
     }
 }

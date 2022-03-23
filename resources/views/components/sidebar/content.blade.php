@@ -1,6 +1,6 @@
 <x-perfect-scrollbar as="nav" aria-label="main" class="flex flex-col flex-1 gap-4 px-3">
 
-    <x-sidebar.link title="Home" href="{{ route('home') }}" :isActive="request()->routeIs('home')">
+    <x-sidebar.link title="Home" href="{{ route('home.index') }}" :isActive="request()->routeIs('home.index')">
         <x-slot name="icon">
             <x-heroicon-o-home class="flex-shrink-0 w-6 h-6" aria-hidden="true" />
         </x-slot>

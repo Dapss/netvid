@@ -38,6 +38,10 @@
                                     <x-label for="poster" :value="__('Poster Serial')" />
                                     <x-input  id="poster" class="block my-2 w-full" type="file" name="poster" autofocus />
                                 </div>
+                                <div>
+                                    <x-label for="cover" :value="__('Cover Serial')" />
+                                    <x-input  id="cover" class="block my-2 w-full" type="file" name="cover" autofocus />
+                                </div>
                             {{-- </div> --}}
                         </div>
                         <div class="flex items-center justify-end mb-4 mx-4">

@@ -8,6 +8,7 @@ use App\Http\Requests\UpdateFilmRequest;
 use GuzzleHttp\Middleware;
 use Intervention\Image\Facades\Image;
 use Symfony\Component\Console\Input\Input;
+use App\Models\Serial;
 
 class FilmController extends Controller
 {
@@ -128,5 +129,13 @@ class FilmController extends Controller
         $film->delete();
 
         return redirect()->route('film.index')->with('success', 'Film Is Deleted!');
+    }
+
+    public function home()
+    {
+        $serials = Serial::all();
+        $films = Film::all();
+
+        return view('home',compact('serials','films'));
     }
 }

@@ -17,4 +17,11 @@ class Serial extends Model
 
         return '/storage/' . $imagepath;
     }
+
+    public function coverImage()
+    {
+        $coverpath = $this->cover;
+        
+        return '/storage/' . $coverpath;
+    }
 }

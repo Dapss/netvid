@@ -21,6 +21,13 @@
     </style>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
+     <!-- Swiper's CSS -->
+     <link
+     rel="stylesheet"
+     href="https://unpkg.com/swiper/swiper-bundle.min.css"
+   />
+
+
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 </head>
